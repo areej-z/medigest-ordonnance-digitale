@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouvelle ordonnance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="ordonnance-container">
+    <h2>Nouvelle ordonnance</h2>
+
+    <form action="../php/generate_ordonnance.php" method="POST">
+        <input type="text" name="patient" placeholder="Nom du patient" required>
+        <input type="text" name="medicament" placeholder="Rechercher un médicament" required>
+        <input type="text" name="dosage" placeholder="Dosage" required>
+        <input type="text" name="duree" placeholder="Durée" required>
+
+        <!-- Boutons avec name/value -->
+        <button type="submit" name="action" value="ajouter">Ajouter médicament</button>
+        <button type="submit" name="action" value="generer">Générer ordonnance</button>
+    </form>
+
+    <div class="send-links">
+        <h3>Transférer l’ordonnance</h3>
+        <a href="https://wa.me/21612345678?text=Bonjour, voici l’ordonnance en PDF : http://tonsite.com/ordonnance.pdf" 
+           target="_blank" class="btn">Envoyer via WhatsApp</a>
+        <a href="mailto:pharmacie@example.com?subject=Ordonnance&body=Bonjour, veuillez trouver ci-joint l’ordonnance en PDF : http://tonsite.com/ordonnance.pdf" 
+           class="btn">Envoyer par Email</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Médicaments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Liste des médicaments</h2>
+
+<input type="text" placeholder="Rechercher un médicament">
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Paracétamol</td>
+        <td>Douleur / Fièvre</td>
+    </tr>
+</table>
+
+<div class="add-medicament">
+    <h3>Ajouter un médicament</h3>
+    <form action="../php/add_medicament.php" method="POST">
+        <input type="text" name="nom" placeholder="Nom du médicament" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <button type="submit">Ajouter</button>
+    </form>
+</div>
+
+</body>
+</html>

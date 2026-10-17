@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription Médecin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barre de navigation avec logo -->
+<header class="navbar">
+    <div class="navbar-left">
+        <img src="images/logo.png" alt="Logo Ordonnance Digitale" class="logo-navbar">
+        <h2>Ordonnance Digitale</h2>
+    </div>
+    <nav>
+        <a href="login.html">Connexion</a>
+        <a href="register.html">Créer un compte</a>
+    </nav>
+</header>
+
+<div class="register-container">
+    <h2>Créer un compte Médecin</h2>
+
+    <form action="../php/register.php" method="POST">
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
+        <input type="tel" name="telephone" placeholder="Téléphone" required>
+        <input type="text" name="numero_professionnel" placeholder="Numéro professionnel" required>
+        <input type="text" name="adresse" placeholder="Adresse du cabinet" required>
+        <input type="number" name="experience" placeholder="Années d'expérience" min="0" required>
+
+        <select name="specialite" required>
+            <option value="">-- Sélectionnez votre spécialité --</option>
+            <option value="cardiologie">Cardiologie</option>
+            <option value="dermatologie">Dermatologie</option>
+            <option value="pediatrie">Pédiatrie</option>
+            <option value="neurologie">Neurologie</option>
+            <option value="chirurgie">Chirurgie</option>
+        </select>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>
+
+</body>
+</html>

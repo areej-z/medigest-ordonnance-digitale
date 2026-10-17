@@ -1,0 +1,453 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   background: linear-gradient(135deg, #0b1c3d, #08152b);
+ /* fond bleu dégradé */
+    color: white;
+}
+
+/* Page d'accueil (index) */
+.home-container {
+    text-align: center;
+    margin-top: 15%;
+    color: #fff;
+}
+
+.home-container h1 {
+    font-size: 32px;
+    color: #4aa3ff;
+    margin-bottom: 15px;
+}
+
+.home-container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e0e6f0;
+}
+
+/* Liens en cadre */
+.home-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.home-links .link-card {
+    display: block;
+    width: 220px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.08);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.home-links .link-card:hover {
+    background-color: #2f8cff;
+    border-color: #2f8cff;
+    transform: translateY(-5px);
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #0056A6;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #2f8cff;
+    border-color: #2f8cff;
+}
+
+.navbar a:active {
+    background-color: #1c6ed5;
+    border-color: #1c6ed5;
+}
+
+/* Conteneur principal */
+.dashboard-container, .profile-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
+h2, h3 {
+    text-align: center;
+    color: #4aa3ff;
+    margin-bottom: 25px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.cards a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cards a:hover {
+    background-color: #2f8cff;
+    border-color: #2f8cff;
+}
+
+.cards a:active {
+    background-color: #1c6ed5;
+    border-color: #1c6ed5;
+}
+
+/* Formulaires */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+form input, form select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.1);
+    color: #e0e6f0;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: #d0d6e0;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background-color: #2f8cff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #1c6ed5;
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2f8cff;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    color: #e0e6f0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tr:hover td {
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #2f8cff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1c6ed5;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.1);
+    color: #e0e6f0;
+    outline: none;
+}
+
+input[type="text"]::placeholder {
+    color: #d0d6e0;
+    font-size: 16px;
+}
+
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.home-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+
+.info-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+    color: #e0e6f0;
+}
+
+.info-section h2 {
+    color: #4aa3ff;
+    margin-bottom: 30px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.info-card h3 {
+    color: #2f8cff;
+    margin-bottom: 10px;
+}
+
+
+
+.logo-navbar {
+    height: 70px;         
+    width: auto;
+    margin-right: 10px;    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.logo-big {
+    max-height: 300px;    
+    width: auto;
+    display: block;
+    margin: 30px auto;     
+    border-radius: 12px;  
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4); 
+}
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1c3d, #08152b); /* fond bleu dégradé */
+    color: white;
+}
+
+/* Conteneur principal de la page de confirmation */
+.dashboard-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Titre principal */
+.dashboard-container h2 {
+    color: #4aa3ff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Paragraphes d’information */
+.dashboard-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #e0e6f0;
+}
+
+/* Mise en valeur des labels */
+.dashboard-container strong {
+    color: #2f8cff;
+}
+
+/* Message de redirection */
+.dashboard-container p:last-child {
+    margin-top: 20px;
+    font-style: italic;
+    color: #4aa3ff;
+}
+
+/* Bouton générique (si tu veux en ajouter un plus tard) */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 20px 0;
+    background-color: #2f8cff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1c6ed5;
+}
+/* Conteneur ordonnance */
+.ordonnance-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+}
+
+/* Titre */
+.ordonnance-container h2 {
+    text-align: center;
+    color: #0056A6;
+    margin-bottom: 25px;
+}
+
+/* En-tête médecin */
+.ordonnance-header {
+    border-bottom: 2px solid #0056A6;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.ordonnance-header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Corps ordonnance */
+.ordonnance-body {
+    margin-bottom: 20px;
+}
+
+.ordonnance-body p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* Pied de page */
+.ordonnance-footer {
+    text-align: center;
+    border-top: 2px solid #0056A6;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-style: italic;
+    color: #0056A6;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #2f8cff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1c6ed5;
+}
+
+
+
+
+
